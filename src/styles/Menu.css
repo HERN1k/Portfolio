@@ -241,7 +241,7 @@
     bottom: -0.4rem;
     border-radius: 50rem;
     transition: all .25s ease-in;
-}
+} 
 
 .link-item-base:hover .underline {
     width: 100%;

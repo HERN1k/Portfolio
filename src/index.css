@@ -151,7 +151,7 @@ html {
     .particlesBg {
         background: linear-gradient(to top, rgba(253, 97, 248, 0.15), #14121b 33%), #14121b;
     }
-}
+} 
 
 .typed-cursor {
     color: #fd61f8;
@@ -207,4 +207,48 @@ html {
     transition: opacity .25s;
     -webkit-animation: 0;
     animation: 0;
+}
+
+.errorConatiner {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-optical-sizing: auto;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 4rem;
+    letter-spacing: 1.5px;
+    opacity: 0.9;
+}
+
+.errorText {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: #eaeaea;
+}
+
+.errorMessage {
+    color: #ff6a6a;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.errorMessageSpan {
+    font-weight: 500;
+    font-size: 1.35rem;
+    font-style: normal;
 }

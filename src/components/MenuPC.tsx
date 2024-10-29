@@ -2,12 +2,11 @@ import { FC, MouseEvent, useState } from "react";
 import "../styles/Menu.css";
 import { AboutSvg, HomeSvg, ProjectsSvg, ResumeSvg } from "./Svgs.tsx";
 
-const Menu : FC = () => {
+const MenuPC : FC = () => {
 
     const [headerHeight] = useState<number>(() => {
         return parseFloat(getComputedStyle(document.documentElement).fontSize) * 4;
     });
-
 
     const onMenuItemClick = (e: MouseEvent<HTMLElement, globalThis.MouseEvent>) => {
         const elementId: string = `${e.currentTarget.id}Id`
@@ -48,7 +47,7 @@ const Menu : FC = () => {
                     Projects
                     <div className="underline" />
                 </div>
-                <div onClick={onMenuItemClick} id="projects" className="link-item-base">
+                <div onClick={onMenuItemClick} id="resume" className="link-item-base">
                     <ResumeSvg className="svg-item-base" />
                     Resume
                     <div className="underline" />
@@ -58,6 +57,4 @@ const Menu : FC = () => {
     );
 }
 
-
-
-export default Menu;
+export default MenuPC;

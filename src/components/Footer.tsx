@@ -46,14 +46,14 @@ const Footer : FC = () => {
                     Copyright © 2024 VH
                 </h1>
                 <div id="footer-links" className="footer-links">
+                    <a className="footer-link" href="https://www.linkedin.com/in/vlad-hirnyk-84654b328">
+                        <LinkedInSvg className="footer-link-item" />
+                    </a>
                     <a className="footer-link" href="https://github.com/HERN1k">
                         <GitHubSvg className="footer-link-item" />
                     </a>
                     <a className="footer-link" href="https://t.me/hern1k">
                         <TelegramSvg className="footer-link-item" />
-                    </a>
-                    <a className="footer-link" href="https://www.linkedin.com/in/vlad-hirnyk-84654b328">
-                        <LinkedInSvg className="footer-link-item" />
                     </a>
                 </div>
             </div>

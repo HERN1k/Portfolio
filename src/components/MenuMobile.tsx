@@ -2,7 +2,7 @@ import { FC, MouseEvent, useState } from "react";
 import { AboutSvg, HomeSvg, ProjectsSvg, ResumeSvg, BurgerButton } from "./Svgs.tsx";
 import "../styles/Menu.css";
 
-const BurgerMenu : FC = () => {
+const MenuMobile : FC = () => {
 
     const [headerHeight] = useState<number>(() => {
         return parseFloat(getComputedStyle(document.documentElement).fontSize) * 4;
@@ -92,18 +92,14 @@ const BurgerMenu : FC = () => {
                         <ProjectsSvg className="svg-item" />
                         Projects
                         </a>
-                    <a onClick={onMenuItemClick} id="projects" className="link-item">
+                    <a onClick={onMenuItemClick} id="resume" className="link-item">
                         <ResumeSvg className="svg-item" />
                         Resume
                     </a>
                 </div>
             </div>
-
-            {/* <div className="menu-container">
-                
-            </div> */}
         </div>
     );
 }
 
-export default BurgerMenu;
+export default MenuMobile;

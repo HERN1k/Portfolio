@@ -21,11 +21,6 @@ const Page: FC<IPage> = ({ id, children }) => {
         };
 
         handleResize();
-
-        // window.addEventListener("resize", handleResize);
-        // return () => {
-        //     window.removeEventListener("resize", handleResize);
-        // };
     }, []);
 
     return (

@@ -1,4 +1,4 @@
-import React, { ErrorInfo } from "react";
+import { ErrorInfo, Component } from "react";
 
 interface Props {
     children: React.ReactNode;
@@ -6,16 +6,17 @@ interface Props {
 
 interface State {
     hasError: boolean;
+    error?: Error;
 }
 
-class ErrorBoundary extends React.Component<Props, State> {
+class ErrorBoundary extends Component<Props, State> {
     constructor(props: Props) {
         super(props);
-        this.state = { hasError: false };
+        this.state = { hasError: false }; 
     }
 
     static getDerivedStateFromError(error: Error) {
-        return { hasError: true };
+        return { hasError: true, error: error };
     }
 
     componentDidCatch(error: Error, errorInfo: ErrorInfo) {
@@ -24,7 +25,23 @@ class ErrorBoundary extends React.Component<Props, State> {
 
     render() {
         if (this.state.hasError) {
-            return <h1>Something went wrong.</h1>;
+            return (
+                <div className="errorConatiner">
+                    <h1 className="errorTitle">
+                        Oops!
+                    </h1>
+                    
+                    <h2 className="errorText">
+                        Something went wrong 😟
+                    </h2>
+    
+                    { 
+                        this.state.error 
+                            ? <i className="errorMessage"><span className="errorMessageSpan">Error message:</span> {this.state.error?.message}asdasdasd</i> 
+                            : <></>
+                    }
+                </div>
+            );
         }
 
         return this.props.children; 

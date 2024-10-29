@@ -1,43 +1,23 @@
-import { FC, useEffect, useState } from "react";
-import Home from "./pages/Home";
-import ErrorBoundary from "./components/ErrorBoundary.tsx";
-import Particles from "./components/Particles.tsx";
-import Page from "./components/Page.tsx";
-import { MOBILE } from "../src/Constants.ts";
-import Menu from "./components/Menu.tsx";
-import BurgerMenu from "./components/BurgerMenu.tsx";
-import Footer from "./components/Footer.tsx";
+import { FC } from "react";
 import About from "./pages/About.tsx";
+import ErrorBoundary from "./components/ErrorBoundary.tsx";
+import Footer from "./components/Footer.tsx";
+import Page from "./components/Page.tsx";
+import Particles from "./components/Particles.tsx";
+import Home from "./pages/Home";
+import Menu from "./pages/Menu.tsx";
+import Resume from "./pages/Resume.tsx";
 
 const App: FC = () => {
-
-    const [menu, setMenu] = useState<JSX.Element>();
-    
-    useEffect(() => {
-        const handleResize = () => {
-            const isMobile: boolean = window.innerWidth <= MOBILE;
-            setMenu(isMobile ? <BurgerMenu /> : <Menu />);
-        }
-
-        handleResize();
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    }, [])
-
     return (
         <Particles>
             <ErrorBoundary>
-                { menu }
+                <Menu />
 
-                <Page id="homeId">
-                    <Home />
-                </Page>
-                <Page id="aboutId">
-                    <About />
-                </Page>
-                <Page id="projectsId">
-                    <></>
-                </Page>
+                <Page id="homeId" children={<Home />} />
+                <Page id="aboutId" children={<About />} />
+                <Page id="projectsId" children={<></>} />
+                <Page id="resumeId" children={<Resume />} />
 
                 <Footer />
             </ErrorBoundary>

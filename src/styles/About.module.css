@@ -7,7 +7,6 @@
     flex-grow: 1;
     height: 100%;
     width: 100%;
-    padding: 2rem;
 }
 
 .title {
@@ -33,12 +32,13 @@
 .text {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     font-size: 1.3rem;
     line-height: 2.5rem;
     letter-spacing: 1.5px;
-    text-align: start;
+    padding: 0 1rem 0 2rem ;
+    text-align: center;
     color: #ffffff;
     opacity: 0;
     transition: all 0.5s ease-in;
@@ -61,13 +61,13 @@
     border-radius: 50%;
     overflow: hidden;
     opacity: 0;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 12px #fd61f881;
     transition: all 0.3s ease-in;
     animation: float 3s ease-in-out infinite;
 }
 
 .img {
-    padding: 5px;
+    padding: 8px;
     opacity: 1;
     transition: all 0.3s ease-in;
 }
@@ -89,6 +89,232 @@
     background: linear-gradient(45deg, #fd61f8, #1e2e54);
     z-index: -10;
     animation: rotate 5s linear infinite;
+}
+
+.skillsetContainer {
+    display: grid;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+}
+
+.skillsetItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 7rem;
+    width: 12rem;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    margin: 0.75rem;
+    border-radius: 6px;
+    border: solid 2px #fd61f8;
+    box-shadow: inset 0px 0px 12px #fd61f881;
+    transition: all 0.25s ease-in;
+}
+
+.skillsetItem:hover {
+    border: solid 3px #fd61f8;
+    transform: scale(1.05);
+}
+
+.skillsetItemSvg {
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    padding: 0;
+    filter: drop-shadow(0px 0px 5px #fd61f878);
+}
+
+.findMeLinksContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.findMeLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    padding: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 12px #fd61f881;
+    transition: transform 0.25s ease-in;
+}
+
+.findMeLinkSvg {
+    height: 1.35rem;
+    width: 1.35rem;
+    fill: #b500af;
+}
+
+.findMeLink:hover {
+    transform: scale(1.05);
+}
+
+.findMeLink:active {
+    transition: transform 0.1s ease-in;
+    transform: translateY(1px);
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        height: fit-content;
+        max-width: 70vw;
+        margin: 0 auto;
+    }
+
+    .meContainer {
+        display: flex;
+        margin-left: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 4rem);
+    }
+
+    .meIntroduceContainer {
+        max-width: 35vw;
+    }
+
+    .aboutMeContainer {
+        max-width: 60rem;
+        margin-bottom: 1rem;
+    }
+    
+    .title {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 2rem;
+        line-height: 3rem;
+        letter-spacing: 1.5px;
+        text-align: center;
+        color: #ffffff;
+        opacity: 0;
+        transition: all 0.5s ease-in;
+    }
+    
+    .spanTitle {
+        color: #fd61f8;
+    }
+    
+    .text {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        letter-spacing: 1.5px;
+        padding: 0;
+        text-align: start;
+        color: #ffffff;
+        opacity: 0;
+        transition: all 0.5s ease-in;
+    }
+    
+    .spanText {
+        font-style: italic;
+        font-weight: 500;
+        color: #fd61f8;
+    }
+
+    .imgContainer {
+        display: block;
+        position: relative;
+        width: 100%;
+        max-width: 20rem;
+        max-height: 20rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 5rem;
+        border-radius: 50%;
+        overflow: hidden;
+        opacity: 0;
+        box-shadow: 0px 0px 12px #fd61f881;
+        transition: all 0.5s ease-in;
+        animation: float 3s ease-in-out infinite;
+    }
+    
+    .skillsetContainer {
+        display: grid;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        transition: all 0.5s ease-in;
+    }
+
+    .findMeLinksContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    .findMeLink {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0 1rem;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        padding: 0;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 12px #fd61f881;
+        transition: transform 0.25s ease-in;
+    }
+
+    .findMeLinkSvg {
+        height: 1.35rem;
+        width: 1.35rem;
+        fill: #b500af;
+    }
+
+    .findMeLink:hover {
+        transform: scale(1.05);
+    }
+
+    .findMeLink:active {
+        transition: transform 0.1s ease-in;
+        transform: translateY(1px);
+    }
 }
 
 @keyframes rotate {
@@ -116,12 +342,10 @@
 }
 
 .textVisible {
-    transform: translateX(0);
     opacity: 1;
 }
 
 .textHidden {
-    transform: translateX(200%);
     opacity: 0;
 }
 

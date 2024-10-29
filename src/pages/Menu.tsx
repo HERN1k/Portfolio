@@ -1,9 +1,9 @@
 import { FC, useEffect, useState } from "react";
-import AboutMobile from "../components/AboutMobile";
-import AboutPC from "../components/AboutPC";
+import MenuMobile from "../components/MenuMobile";
+import MenuPC from "../components/MenuPC";
 import { MOBILE } from "../Constants";
 
-const About: FC = () => {
+const Menu: FC = () => {
 
     const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= MOBILE);
     
@@ -17,7 +17,7 @@ const About: FC = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, [])
 
-    return (isMobile ? <AboutMobile /> : <AboutPC />);
+    return (isMobile ? <MenuMobile /> : <MenuPC />);
 }
 
-export default About;
+export default Menu;
