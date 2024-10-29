@@ -1,0 +1,109 @@
+.footer {
+    display: block;
+    position: relative;
+    height: 3rem;
+    width: 100%;
+    background-color: #0a0416;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.footer-container {
+    display: grid;
+    position: relative;
+    height: 100%;
+    width: 70vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.mobile-footer {
+    height: 10rem;
+    
+}
+
+.mobile-footer-container {
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 1rem 0;
+}
+
+.mobile-footer-item {
+    margin: 0 auto;
+}
+
+.footer-name {
+    display: block;
+    font-optical-sizing: auto;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-right: auto;
+    width: fit-content;
+    height: 1.25rem;
+    overflow: hidden;
+}
+
+.footer-copyright {
+    display: block;
+    font-optical-sizing: auto;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: auto;
+    width: fit-content;
+    height: 1.25rem;
+    overflow: hidden;
+}
+
+.footer-links {
+    display: flex;
+    margin-left: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-link {
+    margin: 0;
+    padding: 0;
+    line-height: 1.35rem;
+    font-size: 1.35rem;
+    margin-left: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.footer-link:first-child {
+    margin-left: 0;
+}
+
+.footer-link-item {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    fill: rgba(255, 255, 255, 0.8);
+    width: 1.35rem;
+    height: 1.35rem;
+    cursor: pointer;
+    
+}
+
+.footer-link-item:hover {
+    fill: rgba(166, 166, 166, 0.8);
+}

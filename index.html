@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>HERN1k | Portfolio</title>
+    <style>
+        .loader-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(to top, rgba(253, 97, 248, 0.15), #14121b 50%), #14121b;
+            z-index: 1000;
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            .loader-container {
+                background: linear-gradient(to top, rgba(253, 97, 248, 0.15), #14121b 33%), #14121b;
+            }
+        }
+
+        .loader {
+            position: relative;
+        }
+
+        #box {
+            width: 50px;
+            height: 50px;
+            background: #cf27c9;
+            animation: animate 0.5s linear infinite;
+            border-radius: 3px;
+        }
+
+        @keyframes animate {
+            17% {
+                border-bottom-right-radius: 3px;
+            }
+
+            25% {
+                transform: translateY(9px) rotate(22.5deg);
+            }
+
+            50% {
+                transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+                border-bottom-right-radius: 40px;
+            }
+
+            75% {
+                transform: translateY(9px) rotate(67.5deg);
+            }
+
+            100% {
+                transform: translateY(0) rotate(90deg);
+            }
+        }
+
+        #shadow {
+            width: 50px;
+            height: 5px;
+            background: #1a1a1a;
+            opacity: 0.1;
+            position: absolute;
+            top: 59px;
+            left: 0;
+            border-radius: 50%;
+            animation: shadow 0.5s linear infinite;
+        }
+
+        @keyframes shadow {
+            50% {
+                transform: scale(1.2, 1);
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="loader" class="loader-container">
+        <div class="loader">
+            <div id="shadow"></div>
+            <div id="box"></div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            document.getElementById("loader").style.display = "none";
+        };
+
+        document.getElementById("loader").style.display = "flex";
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

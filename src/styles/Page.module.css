@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    min-height: calc(100vh - 4rem);
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0; 
+}

@@ -1,0 +1,176 @@
+diff --git a/node_modules/react-burger-menu/dist/react-burger-menu.js b/node_modules/react-burger-menu/dist/react-burger-menu.js
+index 9e4a5b6..c6c6dd6 100644
+--- a/node_modules/react-burger-menu/dist/react-burger-menu.js
++++ b/node_modules/react-burger-menu/dist/react-burger-menu.js
+@@ -1947,6 +1947,35 @@ exports['default'] = function (styles) {
+         return ref.current;
+     }
+     var Menu = function Menu(props) {
++        var defaultProps = {
++                bodyClassName: '',
++                burgerBarClassName: '',
++                burgerButtonClassName: '',
++                className: '',
++                crossButtonClassName: '',
++                crossClassName: '',
++                disableAutoFocus: false,
++                disableCloseOnEsc: false,
++                htmlClassName: '',
++                id: '',
++                itemClassName: '',
++                itemListClassName: '',
++                menuClassName: '',
++                morphShapeClassName: '',
++                noOverlay: false,
++                noTransition: false,
++                onStateChange: function onStateChange() {
++                },
++                outerContainerId: '',
++                overlayClassName: '',
++                pageWrapId: '',
++                styles: {},
++                width: 300,
++                onIconHoverChange: function onIconHoverChange() {
++                },
++                itemListElement: 'nav'
++            };
++        props = _extends({}, defaultProps, props);
+         var _React$useState = _react2['default'].useState(false);
+         var _React$useState2 = _slicedToArray(_React$useState, 2);
+         var isOpen = _React$useState2[0];
+@@ -2043,8 +2072,9 @@ exports['default'] = function (styles) {
+             }
+         }
+         function getStyle(style, index) {
+-            var width = props.width;
+-            var right = props.right;
++            var _props = props;
++            var width = _props.width;
++            var right = _props.right;
+             var formattedWidth = typeof width !== 'string' ? width + 'px' : width;
+             return style(isOpen, formattedWidth, right, index);
+         }
+@@ -2267,34 +2297,6 @@ exports['default'] = function (styles) {
+             _propTypes2['default'].string
+         ])
+     };
+-    Menu.defaultProps = {
+-        bodyClassName: '',
+-        burgerBarClassName: '',
+-        burgerButtonClassName: '',
+-        className: '',
+-        crossButtonClassName: '',
+-        crossClassName: '',
+-        disableAutoFocus: false,
+-        disableCloseOnEsc: false,
+-        htmlClassName: '',
+-        id: '',
+-        itemClassName: '',
+-        itemListClassName: '',
+-        menuClassName: '',
+-        morphShapeClassName: '',
+-        noOverlay: false,
+-        noTransition: false,
+-        onStateChange: function onStateChange() {
+-        },
+-        outerContainerId: '',
+-        overlayClassName: '',
+-        pageWrapId: '',
+-        styles: {},
+-        width: 300,
+-        onIconHoverChange: function onIconHoverChange() {
+-        },
+-        itemListElement: 'nav'
+-    };
+     return Menu;
+ };
+ module.exports = exports['default'];
+diff --git a/node_modules/react-burger-menu/lib/.DS_Store b/node_modules/react-burger-menu/lib/.DS_Store
+new file mode 100644
+index 0000000..33c25b6
+Binary files /dev/null and b/node_modules/react-burger-menu/lib/.DS_Store differ
+diff --git a/node_modules/react-burger-menu/lib/menuFactory.js b/node_modules/react-burger-menu/lib/menuFactory.js
+index c49ffbe..a2b84eb 100644
+--- a/node_modules/react-burger-menu/lib/menuFactory.js
++++ b/node_modules/react-burger-menu/lib/menuFactory.js
+@@ -57,6 +57,34 @@ exports['default'] = function (styles) {
+   }
+
+   var Menu = function Menu(props) {
++    var defaultProps = {
++      bodyClassName: '',
++      burgerBarClassName: '',
++      burgerButtonClassName: '',
++      className: '',
++      crossButtonClassName: '',
++      crossClassName: '',
++      disableAutoFocus: false,
++      disableCloseOnEsc: false,
++      htmlClassName: '',
++      id: '',
++      itemClassName: '',
++      itemListClassName: '',
++      menuClassName: '',
++      morphShapeClassName: '',
++      noOverlay: false,
++      noTransition: false,
++      onStateChange: function onStateChange() {},
++      outerContainerId: '',
++      overlayClassName: '',
++      pageWrapId: '',
++      styles: {},
++      width: 300,
++      onIconHoverChange: function onIconHoverChange() {},
++      itemListElement: 'nav'
++    };
++    props = _extends({}, defaultProps, props);
++
+     var _React$useState = _react2['default'].useState(false);
+
+     var _React$useState2 = _slicedToArray(_React$useState, 2);
+@@ -180,8 +208,9 @@ exports['default'] = function (styles) {
+     }
+
+     function getStyle(style, index) {
+-      var width = props.width;
+-      var right = props.right;
++      var _props = props;
++      var width = _props.width;
++      var right = _props.right;
+
+       var formattedWidth = typeof width !== 'string' ? width + 'px' : width;
+       return style(isOpen, formattedWidth, right, index);
+@@ -465,33 +494,6 @@ exports['default'] = function (styles) {
+     width: _propTypes2['default'].oneOfType([_propTypes2['default'].number, _propTypes2['default'].string])
+   };
+
+-  Menu.defaultProps = {
+-    bodyClassName: '',
+-    burgerBarClassName: '',
+-    burgerButtonClassName: '',
+-    className: '',
+-    crossButtonClassName: '',
+-    crossClassName: '',
+-    disableAutoFocus: false,
+-    disableCloseOnEsc: false,
+-    htmlClassName: '',
+-    id: '',
+-    itemClassName: '',
+-    itemListClassName: '',
+-    menuClassName: '',
+-    morphShapeClassName: '',
+-    noOverlay: false,
+-    noTransition: false,
+-    onStateChange: function onStateChange() {},
+-    outerContainerId: '',
+-    overlayClassName: '',
+-    pageWrapId: '',
+-    styles: {},
+-    width: 300,
+-    onIconHoverChange: function onIconHoverChange() {},
+-    itemListElement: 'nav'
+-  };
+-
+   return Menu;
+ };
+
