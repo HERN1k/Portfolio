@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://hern1k.github.io/portfolio ",
+  "homepage": "https://hern1k.xyz",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

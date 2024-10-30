@@ -58,7 +58,6 @@
     max-width: 75vw;
     height: auto;
     display: block;
-    image-rendering: crisp-edges;
     padding: 0.5rem;
     filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.5));
     animation: float 3s ease-in-out infinite;
