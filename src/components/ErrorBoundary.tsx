@@ -37,7 +37,7 @@ class ErrorBoundary extends Component<Props, State> {
     
                     { 
                         this.state.error 
-                            ? <i className="errorMessage"><span className="errorMessageSpan">Error message:</span> {this.state.error?.message}asdasdasd</i> 
+                            ? <i className="errorMessage">{this.state.error?.message}</i> 
                             : <></>
                     }
                 </div>

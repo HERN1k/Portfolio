@@ -126,7 +126,7 @@
     transform: scale(1.05);
 }
 
-.skillsetItemSvg {
+.skillsetItemSvg { 
     display: block;
     height: 4rem;
     width: 4rem;
@@ -194,7 +194,10 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        height: calc(100vh - 4rem);
+        height: fit-content;
+        width: 100%;
+        padding-top: 20vh;
+        margin-bottom: 10vh;
     }
 
     .meIntroduceContainer {

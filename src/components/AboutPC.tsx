@@ -153,13 +153,13 @@ const FindMe: FC = () => {
                 Feel free to <span className={styles.spanText}>connect</span> with me
             </h2>
             <div className={styles.findMeLinksContainer}>
-                <a className={styles.findMeLink} href="https://www.linkedin.com/in/vlad-hirnyk-84654b328">
+                <a className={styles.findMeLink} target="_blank" href="https://www.linkedin.com/in/vlad-hirnyk-84654b328">
                     <LinkedInSvg className={styles.findMeLinkSvg} />
                 </a>
-                <a className={styles.findMeLink} href="https://github.com/HERN1k">
+                <a className={styles.findMeLink} target="_blank" href="https://github.com/HERN1k">
                     <GitHubSvg className={styles.findMeLinkSvg} />
                 </a>
-                <a className={styles.findMeLink} href="https://t.me/hern1k">
+                <a className={styles.findMeLink} target="_blank" href="https://t.me/hern1k">
                     <TelegramSvg className={styles.findMeLinkSvg} />
                 </a>
             </div>

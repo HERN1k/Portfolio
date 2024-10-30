@@ -1,0 +1,243 @@
+.container {
+    display: block;
+    position: relative;
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.titleContainer {
+    display: block;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+.spanTitle {
+    color: #fd61f8;
+}
+
+.text {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 1.5px;
+    padding: 0 1rem 0 2rem ;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+.spanText {
+    font-style: italic;
+    font-weight: 500;
+    color: #fd61f8;
+}
+
+.listContainer {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    transition: all 0.5s ease-in;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    overflow: hidden;
+    margin: 0;
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+    opacity: 0;
+    border-radius: 6px;
+    box-shadow: inset 0px 0px 16px #fd61f881;
+    transition: all 0.25s ease-in;
+}
+
+.image {
+    max-width: 70%;
+    margin: 1rem;
+    filter: drop-shadow(0px 0px 12px #fd61f878);
+}
+
+.listTitle {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin: 0.75rem;
+    color: #ffffff;
+    filter: drop-shadow(0px 0px 5px #fd61f878);
+}
+
+.listText {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 1.5px;
+    padding: 0.5rem;
+    text-align: justify;
+    color: #ffffffe1;
+}
+
+.listDate {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 1.5px;
+    margin: 0.75rem;
+    text-align: center;
+    color: #ffffffdd;
+}
+
+.button {
+    height: fit-content;
+    width: fit-content;
+    padding: 0.5rem 2rem;
+    border-radius: 6px;
+    border: solid 2px #fd61f8;
+    box-shadow: inset 0px 0px 12px #fd61f881;
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    transform: scale(1.01);
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonSvg {
+    filter: drop-shadow(0px 0px 5px #fd61f878);
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #ffffff;
+}
+
+.buttonText {
+    display: block;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 1.5px;
+    user-select: none;
+    margin-left: 1rem;
+    color: #ffffff;
+    filter: drop-shadow(0px 0px 5px #fd61f878);
+}
+
+@media (min-width: 768px) {
+    .listContainer {
+        display: grid;
+        position: relative;
+        max-width: 70vw;
+        margin: 0 auto;
+        height: fit-content;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        padding-bottom: 5rem;
+        transition: all 0.5s ease-in;
+    }
+
+    .listItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        width: 30vw;
+        overflow: hidden;
+        margin: 0;
+        padding: 2rem 1.5rem;
+        
+        margin: auto;
+        margin-top: 1rem;
+        border-radius: 6px;
+        box-shadow: inset 0px 0px 16px #fd61f881;
+        transition: all 0.25s ease-in;
+        
+    }
+    
+    .image {
+        max-width: 70%;
+        margin: 1rem;
+        filter: drop-shadow(0px 0px 12px #fd61f878);
+    }
+
+
+}
+
+.titleVisible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.titleHidden {
+    transform: translateX(-200%);
+    opacity: 0;
+}
+
+.textVisible {
+    opacity: 1;
+}
+
+.textHidden {
+    opacity: 0;
+}

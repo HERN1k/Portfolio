@@ -7,18 +7,17 @@ import Particles from "./components/Particles.tsx";
 import Home from "./pages/Home";
 import Menu from "./pages/Menu.tsx";
 import Resume from "./pages/Resume.tsx";
+import Projects from "./pages/Projects.tsx";
 
 const App: FC = () => {
     return (
         <Particles>
             <ErrorBoundary>
                 <Menu />
-
                 <Page id="homeId" children={<Home />} />
                 <Page id="aboutId" children={<About />} />
-                <Page id="projectsId" children={<></>} />
+                <Page id="projectsId" children={<Projects />} />
                 <Page id="resumeId" children={<Resume />} />
-
                 <Footer />
             </ErrorBoundary>
         </Particles>
