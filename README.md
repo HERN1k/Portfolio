@@ -14,7 +14,7 @@
 </div>
 <p></p>
 
-<h2>My personal portfolio <a href="https://hern1k.xyz/" target="_blank">hern1k.xyz</a></h2>
+<h2>👨🏻‍💻 My personal portfolio <a href="https://hern1k.xyz/" target="_blank">hern1k.xyz</a></h2>
 <p>Which features some of my github projects as well as my resume and technical skills</p>
 <p></p>
 <p></p>
