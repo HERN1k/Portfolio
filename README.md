@@ -14,7 +14,9 @@
 </div>
 <p></p>
 
-<p>My personal portfolio <a href="https://hern1k.xyz/" target="_blank">hern1k.xyz</a> which features some of my github projects as well as my resume and technical skills</p>
+<h2>My personal portfolio <a href="https://hern1k.xyz/" target="_blank">hern1k.xyz</a></h2>
+<p>Which features some of my github projects as well as my resume and technical skills</p>
+<p></p>
 <p></p>
 
 <p>This project was built using these technologies:</p>
@@ -24,6 +26,7 @@
   <img alt="Vite" src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" height="30px" />
   <img alt="React.js" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" height="30px" />
   <img alt="Node.js" src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" height="30px" />
+  <img alt="GithubPages" src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white" height="30px" />
 </div>
 <p></p>
 
