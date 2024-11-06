@@ -31,14 +31,22 @@
 
 ## 🛠 Getting Started and Installation
 
-<p>Clone down this repository. You will need `node.js` and `git` installed globally on your machine</p>
+<p>Clone this repository. You will need `Node.js` and `Git` installed globally on your machine</p>
 <p></p>
 
 1. Clone repository: `git clone https://github.com/HERN1k/Portfolio.git`
 
-2. Installation dependencies: `npm install`
+2. Go to the project folder:
+   ```bash
+   cd Portfolio
 
-3. In the project directory, you can run: `npm run dev`
+3. Installation dependencies:
+   ```bash
+   npm install
+
+4. End you can run:
+   ```bash
+   npm run dev
 
 <p></p>
 
