@@ -31,7 +31,7 @@
 
 ## 🛠 Getting Started and Installation
 
-<p>Clone this repository. You will need `Node.js` and `Git` installed globally on your machine</p>
+Clone this repository. You will need `Node.js` and `Git` installed globally on your machine
 <p></p>
 
 1. Clone repository: `git clone https://github.com/HERN1k/Portfolio.git`
