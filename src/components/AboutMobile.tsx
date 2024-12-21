@@ -50,9 +50,9 @@ const Introduce: FC = () => {
                 LET ME <span className={styles.spanTitle}>INTRODUCE</span> MYSELF
             </h1>
             <h2 className={`${styles.text} ${textClass}`}>
-                My name is <span className={styles.spanText}>Vlad Hirnyk,</span> a 22-year-old <span className={styles.spanText}>.NET</span> developer from Kyiv, Ukraine. I'm a beginner excited to grow in backend development.<br />
+                My name is <span className={styles.spanText}>Vlad Hirnyk,</span> a 22-year-old <span className={styles.spanText}>C#/.NET</span> developer from Kyiv, Ukraine. I'm a beginner excited to grow in development.<br />
                 <br />
-                With a foundation in <span className={styles.spanText}>C#, JavaScript, and R,</span> I'm eager to apply my skills to real-world projects. My interests include building <span className={styles.spanText}>efficient backend systems</span>, exploring <span className={styles.spanText}>modern web tech</span>, and working on <span className={styles.spanText}>data-driven solutions.</span>
+                With a foundation in <span className={styles.spanText}>C#, JavaScript, and R,</span> I'm eager to apply my skills to real-world projects. My interests include building <span className={styles.spanText}>efficient backend systems</span>, exploring <span className={styles.spanText}>modern web tech</span>, and working on <span className={styles.spanText}>desktop applications.</span>
             </h2>
         </div>
     );

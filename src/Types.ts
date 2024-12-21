@@ -1,3 +1,5 @@
+import { JSX } from "react";
+
 export interface IBackground {
     children: JSX.Element;
 }
@@ -21,6 +23,8 @@ export interface IProjectItem {
         title: string;
         text: string;
         date: string; 
-        link?: string;
+        gitHubLink?: string;
+        storeLink?: string;
+        storeName?: string;
     };
 }

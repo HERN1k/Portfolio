@@ -61,9 +61,10 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-bottom: 2rem;
     transition: all 0.5s ease-in;
+    gap: 1rem;
 }
 
 .listItem {
@@ -75,7 +76,6 @@
     overflow: hidden;
     margin: 0;
     padding: 2rem 1.5rem;
-    margin: 1rem;
     opacity: 0;
     border-radius: 6px;
     box-shadow: inset 0px 0px 16px #fd61f881;
@@ -128,7 +128,18 @@
     color: #ffffffdd;
 }
 
+.buttonsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
 .button {
+    display: block;
     height: fit-content;
     width: fit-content;
     padding: 0.5rem 2rem;
@@ -137,7 +148,6 @@
     box-shadow: inset 0px 0px 12px #fd61f881;
     transition: all 0.1s ease-in;
     cursor: pointer;
-    margin-top: 1rem;
 }
 
 .button:hover {
@@ -190,7 +200,7 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
-        margin-top: 1rem;
+        margin-top: 3rem;
         margin-bottom: 2rem;
         padding-bottom: 5rem;
         transition: all 0.5s ease-in;
@@ -206,13 +216,9 @@
         overflow: hidden;
         margin: 0;
         padding: 2rem 1.5rem;
-        
-        margin: auto;
-        margin-top: 1rem;
         border-radius: 6px;
         box-shadow: inset 0px 0px 16px #fd61f881;
         transition: all 0.25s ease-in;
-        
     }
     
     .image {
