@@ -1,15 +1,17 @@
-<h2 align="center">
-  <a href="https://hern1k.xyz/" target="_blank">HERN1k</a> Portfolio Website
-</h2>
 <div align="center">
   <img alt="Demo" src="/public/readme.png" />
 </div>
+<h2 align="center">
+  <a href="https://hern1k.xyz/" target="_blank">HERN1k</a> Portfolio Website
+</h2>
+
 <p></p>
 
 <div algin="center">
   <img alt="Built with love" src="https://forthebadge.com/images/badges/built-with-love.svg" height="30px" />
   <img alt="Made with TypeScript" src="https://forthebadge.com/images/badges/made-with-typescript.svg" height="30px" />
   <img alt="Open source" src="https://forthebadge.com/images/badges/open-source.svg" height="30px" />
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge" height="30px" />
 </div>
 <p></p>
 
@@ -61,4 +63,4 @@ Clone this repository. You will need `Node.js` and `Git` installed globally on y
 
 ## 🤩 Show your support
 
-<p>Give a ⭐ if you like this website!</p>
+<p>Please give a ⭐ if you like this repository!</p>
